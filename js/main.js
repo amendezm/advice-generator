@@ -22,7 +22,5 @@ window.onload = () => {
       });
   };
 
-  setAdvice();
-
   document.getElementById("Dice").addEventListener("click", setAdvice);
 };
