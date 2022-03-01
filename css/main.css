@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  width: 100vw;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  min-width: 300px;
+  height: 350px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 90vw;
+    margin-bottom: 10vh;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  font-weight: 800;
+  margin-top: 3rem;
+}
+
+.text {
+  height: 57%;
+  color: white;
+  font-size: 1.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 88%;
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 1.5rem;
+  }
+}
+
+.divider {
+  display: block;
+}
+
+.divider-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .divider {
+    display: none;
+  }
+
+  .divider-mobile {
+    display: block;
+  }
+}
+
+.dice {
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 320px;
+}
+
+.dice:hover {
+  cursor: pointer;
+  box-shadow: hsl(150deg 100% 66%) 0px 0px 36px;
+}
