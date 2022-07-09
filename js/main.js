@@ -2,13 +2,13 @@
 
 window.onload = () => {
   const getAdvice = async () => {
-    const response = await fetch("https://api.adviceslip.com/advice");
+    const id = Math.floor(Math.random() * 223) + 1;
+    const response = await fetch(`https://api.adviceslip.com/advice/${id}`);
     const advice = await response.json();
     return advice;
   };
 
-  const setAdvice = async () => {
-    document.getElementById("AdviceText").innerHTML = "Loading...";
+  const setAdvice = () => {
     getAdvice()
       .then((response) => {
         const {
